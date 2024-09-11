@@ -1,0 +1,17 @@
+:root {
+    --primary: #602783;
+    --secondary: #D0BA86;
+    --base-light: #D2EAE5;
+    --base-dark: #3B7E71;
+    --light: #FCFBF8;
+    --dark: #1D180B;
+
+    --body-text: 'Lora', 'times New Roman', 'serif';
+    --functional-text: 'Poopins', 'Arial', 'Helvetica', 'sans-serif';
+    --heading-text: 'Poopins', 'Arial', 'Helvetica', 'sans-serif';
+    --byline-text: 'Poopins', 'Arial', 'Helvetica', 'sans-serif';
+
+
+
+    /* --functional-text: var(--body-text) */
+}

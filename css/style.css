@@ -1,0 +1,388 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+/* Reset some default browser styles */
+body,
+h1,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+/*  font-size: 16px = 1rem = 100% ist defazlt muss nicht unbedingt hier angeben */
+html {
+    font-family: var(--body-text);
+    font-size: 100%;
+    background-color: var(--light);
+
+}
+
+/* -----Heading-Text------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-text);
+    font-weight: bold;
+    line-height: 120%;
+
+}
+
+h1 {
+    font-size: 3rem;
+    filter: drop-shadow(2px 2px 2px #282828b7);
+
+    margin-top: 6.5vh;
+}
+
+h2 {
+    font-size: 2.5rem;
+    filter: drop-shadow(2px 2px 2px #282828b7);
+}
+
+h3 {
+    font-size: 2rem;
+    filter: drop-shadow(2px 2px 2px #282828b7);
+}
+
+h4 {
+    font-size: 1.7rem;
+    filter: drop-shadow(2px 2px 2px #282828b7);
+}
+
+h5 {
+    font-size: 1.4rem;
+    filter: drop-shadow(2px 2px 2px #282828b7);
+}
+
+h6 {
+    font-size: 1.2rem;
+    filter: drop-shadow(2px 2px 2px #282828b7);
+}
+
+
+/* -----Fonts zuweisen ------- */
+
+
+
+.body-text {
+    font-family: var(--body-text);
+    line-height: 120%;
+    font-size: 1.00rem;
+    /* letter-spacing: 1px; */
+}
+
+.funstional-text {
+    font-family: var(--functional-text);
+    font-weight: 200;
+    /* line-height: 120%; */
+}
+
+.byline-text {
+    font-family: var(--byline-text);
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+
+
+a,
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--light);
+}
+
+small {
+    font-family: var(--display-text);
+    font-weight: 200;
+}
+
+/* ----------- Abstände----------- */
+
+/* 1rem = 16px */
+
+.py-0 {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.py-1 {
+    padding-bottom: 1rem;
+    padding-top: 0.3rem;
+}
+
+/* 2rem = 32px */
+.py-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* 3rem = 48px */
+.py-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* 4rem = 64px */
+.py-4 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* 5rem = 80px */
+.py-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* 6rem = 96px */
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+/* 6.5rem = 104px */
+.py-6-5 {
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+}
+
+.py-10 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+/* 15rem = 240px */
+.py-15 {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+/*--------- X-Horizontale Abstände ---------*/
+/* Shorthand hier nicht verwenden, da sonst die Werte sich überschreiben werden */
+.px-0 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.px-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.px-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.px-3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+.px-4 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.px-5 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.px-6 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.px-6-5 {
+
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+}
+
+.px-10 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.px-15 {
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+/* Schriftformatierung */
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+/* ----- Flex-Anweisungen ----- */
+.flex {
+    display: flex;
+}
+
+/* zentriert die Boxen in die Mitte vom Elterncontainer vertikal*/
+.algn-items-center {
+    align-items: center;
+}
+
+/* zentriert die Boxen in die Mitte vom Elterncontainer horrizentral*/
+.justify-content-center {
+    justify-content: center;
+}
+
+
+.justify-content-left {
+    justify-content: left;
+}
+
+.justify-content-right {
+    justify-content: right;
+}
+
+
+
+/* -----------Button--- links */
+
+a,
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+    filter: drop-shadow(2px 2px 2px #282828b7);
+}
+
+button,
+a {
+    font-family: var(--display-text);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.button img,
+button img {
+    height: 1.25rem;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border: none;
+    color: var(--light);
+
+    padding: 5px 10px;
+    /* border-radius: 3px;
+    box-shadow: 0px 0px 2px 2px #3736368f inset; */
+    /* box-shadow: 1px 1px 6px 2px rgba(100, 100, 100, 0.442);
+    border: 1px solid #b4b3b387; */
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 2px #282828b7);
+}
+
+.btn-primary:hover {
+    filter: hue-rotate(385deg);
+    /* filter: drop-shadow(2px 2px 2px #282828b7); */
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    border: none;
+    /* color: var(--light); */
+    /* box-shadow: 0px 0px 2px 2px #7471719d; */
+    /* box-shadow: 0px 0px 2px 2px #3736368f; */
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 2px #282828b7);
+
+
+}
+
+.btn-secondary:hover {
+    filter: hue-rotate(345deg);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.283);
+}
+
+.img-fluid {
+    max-width: 400px;
+    height: auto;
+}
+
+.navbar img,
+.navbar-items,
+.hero img,
+.about img,
+.grid-container img,
+.kontakt-section img {
+    filter: drop-shadow(2px 2px 2px #282828b7);
+}
+
+
+
+@media screen and (width<=576px) {
+    html {
+
+        font-size: 80%;
+        line-height: 120%;
+    }
+
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+
+    .btn-primary {
+
+        padding: 6px 6px;
+    }
+
+    .btn-secondary {
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+
+
+}

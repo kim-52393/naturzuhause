@@ -1,0 +1,289 @@
+@import url(fonts.css);
+@import url(variablen.css);
+@import url(grid-card.css);
+@import url(gallery-grid.css);
+@import url(navi.css);
+
+/* -------Header/Nav Section---------- */
+header {
+    background-color: var(--base-dark);
+    color: var(--light);
+    width: 100%;
+
+}
+
+
+
+/* die navigation ist ÜBER den <HEADER>, direkt nach <BODY> 
+   damit sie sichbar am oberen Rand bleibt, auch bei scrollen zu unten-liegenden Container  */
+
+
+nav {
+    background-color: var(--base-dark);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 10vh;
+    background-size: cover;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    width: 100%;
+    filter: drop-shadow(2px 2px 2px #282828b7);
+}
+
+nav img {
+    margin-left: 2rem;
+
+}
+
+nav .icons {
+    gap: 0.1rem;
+
+}
+
+nav .icons:nth-child(3) {
+    margin-right: 2rem;
+
+}
+
+nav ul li:nth-child(1) {
+    text-wrap: nowrap;
+
+}
+
+nav li {
+    padding: 0 0.8rem;
+
+}
+
+
+
+
+
+
+
+/* -------Hero Section---------- */
+
+.hero {
+    min-height: 90vh;
+    width: 100%;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.hero h1 {
+    text-decoration: underline;
+    text-decoration-thickness: 0.4rem;
+}
+
+.hero .intro,
+.intro+img {
+    flex: 1 1 200px;
+
+}
+
+.hero h6 {
+    padding-bottom: 0.5rem;
+
+}
+
+/* .shadow {
+    filter: drop-shadow(2px 2px 2px #282828b7);
+} */
+
+.intro {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 2rem;
+    max-width: 450px;
+
+}
+
+.intro-pic {
+    max-height: 590px;
+    width: auto;
+    margin: 2rem;
+
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.hero button {
+    width: 12rem;
+    margin-top: 1rem;
+    padding: 0.8rem 1rem 0.2rem 1rem;
+    border: none;
+
+
+}
+
+
+
+
+
+
+/* -------About / Über Uns Section---------- */
+.about {
+    background-color: var(--base-light);
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem;
+    gap: 4rem;
+    width: 100%;
+
+}
+
+.about img {
+    border-radius: 5px;
+}
+
+.about .body-text {
+    max-width: 550px;
+    text-align: left;
+
+}
+
+.about h2 {
+    text-align: left;
+}
+
+/* -------Kontakt-Fragen Section---------- */
+
+
+.kontakt-section {
+    width: 100%;
+    padding: 5rem 15rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background-color: var(--base-light);
+
+}
+
+.kontakt-section img {
+    /* box-shadow: 1px 1px 6px 2px rgba(100, 100, 100, 0.442);
+    border: 1px solid #b4b3b387; */
+    border-radius: 5px;
+}
+
+.kontakt-section img:nth-child(1) {
+    border: none;
+}
+
+.kontakt-fragen {
+    flex-direction: column;
+
+}
+
+.kontakt-fragen h2 {
+    text-align: left;
+}
+
+form,
+fieldset {
+    border: none;
+    font-family: var(--body-text);
+
+
+}
+
+fieldset {
+    margin: 2rem 0;
+    padding: 0;
+    border: none;
+
+}
+
+input {
+    width: 30rem;
+    height: 3rem;
+    border: none;
+    border-radius: 3px;
+    filter: drop-shadow(2px 2px 2px #282828b7);
+    background-color: var(--light);
+}
+
+textarea {
+    border: none;
+    width: 30rem;
+    height: 10rem;
+
+    filter: drop-shadow(2px 2px 2px #282828b7);
+    border-radius: 3px;
+
+}
+
+label {
+    font-size: 1.1rem;
+
+}
+
+::placeholder {
+    font-size: 0.9rem;
+    vertical-align: top;
+    font-family: var(--body-text);
+
+
+
+}
+
+.kontakt-section img:nth-child(2) {
+    max-width: 85%;
+
+}
+
+textarea::placeholder {
+    font-size: 0.9rem;
+    font-family: var(--body-text);
+    padding-top: 5px;
+
+}
+
+
+
+/* -------footer---------- */
+
+footer {
+    width: 100%;
+    background-color: var(--dark);
+    gap: 80px;
+    padding: 2rem 10%;
+    color: var(--light);
+    font-size: 0.9rem;
+    line-height: 135%;
+}
+
+footer a {
+    color: var(--light);
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+.rechtliches ul {
+    gap: 1rem;
+    flex-direction: column;
+
+
+}
+
+.social-icons {
+    gap: 40px;
+    height: 30px;
+    width: 200px;
+}
