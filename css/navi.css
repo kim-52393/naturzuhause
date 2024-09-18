@@ -4,18 +4,26 @@
 /*  Eltern-Container-vom Navi */
 .top-nav {
     display: grid;
-    grid-template-columns: 13% 62% 25%;
+    grid-template-columns: 10% 65% 25%;
     flex-direction: row;
     align-items: center;
     background-color: var(--base-dark);
-    background-size: cover;
-    height: 10vh;
+    /* background-size: cover; */
+    /* height: 10vh; */
+    height: 6.5em;
     box-shadow: 5px 5px 5px 1px #4e4e4e36;
+    /* border-bottom: 1px solid #4e4e4e36; */
+
     top: 0;
-    position: fixed;
+    position: sticky;
     z-index: 100;
-    width: 100vw;
+    /* width: 99.0011vw; */
     box-sizing: border-box;
+    background-size: cover;
+
+
+    width: auto;
+
 
 }
 
@@ -24,13 +32,19 @@
     display: flex;
     align-items: center;
     padding-left: 1.6rem;
+    box-sizing: border-box;
+    background-size: cover;
 
+}
 
+ul.menu {
+    width: 100%;
+    padding-left: -10%;
 }
 
 /* Item-Container mit search, bag, heart */
 .navbar-items {
-
+    box-sizing: border-box;
     text-align: end;
     padding-right: 2rem;
 }
@@ -47,6 +61,8 @@
     flex-direction: row;
     justify-content: center;
     list-style-type: none;
+    box-sizing: border-box;
+
 
 }
 
@@ -55,6 +71,7 @@
     overflow: hidden;
     text-wrap: nowrap;
     color: var(--light);
+
 
 }
 
@@ -65,12 +82,20 @@
 
 .menu-button-container {
     display: none;
+
     height: 100%;
     width: 30px;
     cursor: pointer;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+
+
+
+    padding: 0 0rem 0 3rem;
+    margin: 0 -1rem;
+
 }
 
 #menu-toggle {
@@ -83,21 +108,23 @@
     display: block;
     background-color: #fff;
     position: absolute;
-    height: 2px;
-    width: 22px;
+    height: 3px;
+    width: 27px;
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    border-radius: 2px;
+    border-radius: 100px;
     margin-top: 10px;
+
+    margin-right: 1.8em;
 }
 
 .menu-button::before {
     content: '';
-    margin-top: -8px;
+    margin-top: -10px;
 }
 
 .menu-button::after {
     content: '';
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 #menu-toggle:checked+.menu-button-container .menu-button::before {
@@ -120,6 +147,8 @@
         display: flex;
 
 
+        /* width: 100%; */
+
     }
 
     .menu {
@@ -128,20 +157,25 @@
         margin-top: 5vh;
         left: 0;
         flex-direction: column;
-        width: 100%;
-        background-size: cover;
-        align-items: center;
 
+        /* width: 100%; */
+        /* background-size: cover; */
 
     }
 
+
+    /* Texte von den links im zugeklappten Zustand  */
     #menu-toggle~.menu li {
         height: 0;
         margin: 0;
         padding: 0;
         border: 0;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-
+        background-color: #48887b9c;
+        padding-left: 85%;
+        margin-left: -10%;
+        transition: height 600ms cubic-bezier(0.23, 1, 0.32, 1);
+        width: auto;
+        /* animation: roll-in-right 2s ease 0s 1 reverse forwards; */
     }
 
 
@@ -149,16 +183,27 @@
     #menu-toggle:checked~.menu li {
         height: 3em;
         padding-top: 0.8em;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-
-        background-color: #3b7e71f2;
-        width: 100vw;
-
+        transition: height 600ms cubic-bezier(0.23, 1, 0.32, 1);
+        background-color: #3b7e71f3;
         border-bottom: 1px solid #c6c6c666;
-        margin-left: -2rem;
+        margin-left: -10%;
         padding-left: 85%;
-
+        /* transition: right 5000ms cubic-bezier(.21, .48, .53, .86) ease-in-out; */
+        /* animation: roll-in-right 2s ease 0s 1 reverse forwards; */
     }
+
+
+    /* @keyframes roll-in-right {
+        0% {
+            opacity: 0;
+            transform: translateX(250px) rotate(200deg);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0) rotate(0deg);
+        }
+    } */
 
     #menu-toggle:checked~.menu li:nth-child(1) {
         border-top: 1px solid #c6c6c666;
@@ -177,11 +222,20 @@
     .top-nav {
         display: grid;
         grid-template-columns: 35% auto 10%;
+        width: auto;
+
     }
 
     /* Item-Container mit search, bag, heart */
     .navbar-items {
         grid-row: 1 / 3;
+
+    }
+
+    /*  is icon heart */
+    .navbar-items a:nth-child(3) {
+        /* background-color: red; */
+        padding-right: 1rem;
     }
 
     /*  nur logo-leaf */
@@ -190,8 +244,8 @@
         grid-row: 1 / 2;
         padding-left: 1.8rem;
         padding-top: 0.4rem;
-        align-items: center;
-
+        /* align-items: center; */
+        width: auto;
     }
 
 }
@@ -199,6 +253,16 @@
 @media screen and (width <=576px) {
     .menu {
         top: 0;
-        padding-top: 4vh;
+        padding-top: 4.2vh;
+
     }
+
+    #menu-toggle:checked~.menu li {
+        width: auto;
+        /* padding-right: 1rem; */
+        /* box-shadow: 5px 5px 5px 1px #4e4e4e36; */
+
+    }
+
+
 }

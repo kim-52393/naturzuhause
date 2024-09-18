@@ -1,7 +1,7 @@
 /* ----- Gallery GRID ------ */
 
 section .container-1 {
-    width: 100%;
+    width: auto;
 }
 
 .gallery-item-1 {
