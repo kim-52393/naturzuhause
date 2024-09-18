@@ -106,7 +106,7 @@ ul.menu {
 .menu-button::before,
 .menu-button::after {
     display: block;
-    background-color: #fff;
+    background-color: #fdfdfd;
     position: absolute;
     height: 3px;
     width: 27px;
@@ -262,6 +262,20 @@ ul.menu {
         /* padding-right: 1rem; */
         /* box-shadow: 5px 5px 5px 1px #4e4e4e36; */
 
+    }
+
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
+
+        background-color: #fdfdfd;
+        /* position: absolute;
+    height: 3px;
+    width: 27px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 100px;
+    margin-top: 10px; */
+        margin-right: 2.8em;
     }
 
 
